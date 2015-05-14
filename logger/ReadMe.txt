@@ -1,1 +1,3 @@
-This is a Logger API
+This is a Logger API.
+
+I am making some changes.
