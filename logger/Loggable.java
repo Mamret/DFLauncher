@@ -3,7 +3,7 @@ package logger;
 /**
  * Entry point to Logger functionality
  * Any class that wants to easily log events should implement this interface
- * and use its default methods
+ * and use its default methods.
  * 
  * @author Marek Murdza
  *

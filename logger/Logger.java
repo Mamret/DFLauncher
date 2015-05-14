@@ -11,6 +11,7 @@ import java.nio.file.*;
  * thus constructors are private. Logger instance is accesed and created via getInstance() method.
  * The method itself as well as all the other methods are private or package private.
  * The only way to use Logger is via Loggers utility class.
+ 
  * @author Mamret
  *
  */
