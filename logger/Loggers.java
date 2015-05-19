@@ -48,7 +48,7 @@ public class Loggers {
 		// TO-DO: Check for validity of names.
 		
 		if(logPath != null) {
-			throw new IllegalArgumentException("Path exists error");   // change exception to logger specific
+			throw new LoggerException(new IllegalArgumentException("Path has already been specified"));   
 		} else if(path.length != 0){
 			Path tempPath = Paths.get("");
 			for(String s: path) {

@@ -69,7 +69,7 @@ class Logger {
 		try(PrintWriter output = new PrintWriter(new FileWriter(logFile, true))) {
 			output.println(message);
 		} catch(IOException ioe) {
-			ioe.printStackTrace();
+			throw new LoggerException(ioe);
 		}
 		
 		return message;
@@ -107,7 +107,7 @@ class Logger {
 				logFile.createNewFile();
 			}
 		} catch(IOException ioe) {
-			ioe.printStackTrace();
+			throw new LoggerException(ioe);
 		}
 	}
 	
