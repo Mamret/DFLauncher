@@ -13,7 +13,7 @@ import java.nio.file.Paths;
  *
  */
 
-public class Loggers {
+public final class Loggers {
 	
 	// logPath holds the location of a log file
 	// consoleOutput is self-explanatory
@@ -45,6 +45,7 @@ public class Loggers {
 		// separate folder with the first being the top one.
 		// it is possible to abuse the method with strings containing
 		// system specific separators. 
+		
 		// TO-DO: Check for validity of names.
 		
 		if(logPath != null) {
